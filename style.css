@@ -1,0 +1,115 @@
+/* Estilo para el fondo del documento */
+body {
+  background: linear-gradient(to right, #000000, #041639, #0c0f14, #030a17, #010711);
+  background-size: 600% 600%;
+  animation: gradient 10s ease infinite;
+}
+
+/* Animación para el fondo del documento */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+#galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#galeria img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#capa {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#imagen-ampliada {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+}
+
+
+img.imagen-ampliable {
+  max-width: 150px;
+  max-height: 150px;
+  margin: 10px;
+  cursor: pointer;
+
+
+}
+
+footer {
+  font-size: 12px;
+  color: #00FF00;
+  background-color: #000000;
+  border-style: double;
+  animation: gradient-animation 5s ease infinite;
+  
+}
+footer:hover {
+  font-size: 15px;
+}
+
+h1 {
+  animation: gradient-animation 5s ease infinite;
+  text-align: center;
+}
+
+@keyframes gradient-animation {
+  0% {
+    color: #ff0;
+  }
+  50% {
+    color: #0ff;
+  }
+  100% {
+    color: #f0f;
+  }
+}
+
+
+@keyframes neon-border {
+  0% {
+    border-color: #FF0080; /* color neon rosa */
+  }
+  25% {
+    border-color: #00FFFF; /* color neon cyan */
+  }
+  50% {
+    border-color: #FFFF00; /* color neon amarillo */
+  }
+  75% {
+    border-color: #FF00FF; /* color neon magenta */
+  }
+  100% {
+    border-color: #00FF00; /* color neon verde */
+  }
+}
+
+
