@@ -7,7 +7,7 @@ for (var i = 1; i <= 26; i++) {
 // Crear un elemento de imagen para cada imagen en el arreglo
 for (var i = 0; i < imagenes.length; i++) {
   var imagen = document.createElement("img");
-  imagen.src = imagenes[i];
+  imagen.src = "imagenes/" + imagenes[i];
   imagen.alt = "imagen " + (i + 1);
   imagen.className = "imagen-ampliable";
   imagen.onclick = function() { ampliarImagen(this); };
